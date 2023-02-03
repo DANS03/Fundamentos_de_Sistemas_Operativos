@@ -19,8 +19,7 @@ int main(){
         printf("%d <--Soy el hijo\n",childId);
 
         sleep(1);
-        printf("Soy el hijo\n");
-        //exit();
+        exit();
     } else{
         parentId = getpid();
         
