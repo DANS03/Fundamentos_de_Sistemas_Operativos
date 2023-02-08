@@ -19,13 +19,14 @@ int main(){
         printf("%d <--Soy el hijo\n",childId);
 
         sleep(1);
-        exit();
+        exit(0);
     } else{
         parentId = getpid();
         
         printf("%d  <--Soy el padre\n",parentId);
 
         sleep(20);
+        printf("%d  Fin <--Soy el padre\n",parentId);
     }
     return 0;
 }

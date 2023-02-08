@@ -17,7 +17,7 @@ int main(){
 
         sleep(20);
         printf("Soy el hijo\n");
-        //exit();
+        exit(0);
     } else{
         parentId = getpid();
         

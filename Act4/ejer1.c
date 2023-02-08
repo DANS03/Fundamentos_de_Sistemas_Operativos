@@ -9,16 +9,16 @@
 
 int main(){
 
-    pid_t parentID= getpid();
+    pid_t parentID = getpid();
     pid_t childId;
     
     childId = fork();
 
     if(childId == 0){
         kill(parentID,SIGTERM);
-        sleep(5);
+        sleep(1);
         printf("Soy el hijo\n");
-        //exit();
+        exit(0);
     } else{
         wait(NULL);
         printf("Soy el padre");
