@@ -34,7 +34,7 @@ int main(int argc, char* argv[])
             found_u = strtok(text, ":");//dividemos el string para econtrar su usuario
             found_p = strtok(NULL, ":");//dividemos el string para econtrar su contraseña
 
-            if (strcmp(user, found_u) == 0 && strcmp(contra, found_p) == 0)
+            if (strcmp(user, found_u) == 0 && strcmp(password, found_p) == 0)
             {
                 found = 1;
                 break;

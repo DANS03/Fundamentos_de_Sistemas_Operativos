@@ -12,9 +12,12 @@ int main(int argc, char const* argv[])
 
     for (int i = 0; i < NumProssess; i++)//Ejecuta 6 procesos getty desde una nueva ventana.
     {
+        
         p = fork();
+
         if (p == 0)
         {
+            
             execlp("xterm", "xterm", "-e", "./getty", NULL);
         }
     }

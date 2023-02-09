@@ -22,7 +22,6 @@ int main(){
         parentId = getpid();
         
         printf("%d  <--Soy el padre\n",parentId);
-
         sleep(1);
     }
     return 0;
